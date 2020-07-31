@@ -142,9 +142,11 @@
             </div>
             <div class="text pl-3">
 
-              <span class="institution">Location Inference of Tweets:A Performance Comparison of Name-Entity Recognizer and Probabilistic Models</span>
+              <span class="institution">Location Inference of Tweets: A Performance Comparison of Name-Entity Recognizer and Probabilistic Models</span>
               <ul>
-                <li>Extracted geo-related words from 380,000 tweets by 9500 users using the Stanford CoreNLP software
+                <li>Extracted geo-related words from 380,000 tweets by 9500 users using the Stanford CoreNLP software from Stanford NLP Group (Finkel et al., 2005)</li>
+                <li>Queried Nominatim OpenStreetMap API for two choices of coordinates for each location, computed pairwise distances between each pair of locations with geopy</li>
+                <li>Received 13.56% accuracy for US States when considering top 3 coordinates ranked by weighted distance score method by Brunsting et al. (2016)</li>
               </ul>
           </div>
 
